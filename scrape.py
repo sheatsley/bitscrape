@@ -5,7 +5,7 @@ Mon Nov 4 2019
 """
 
 
-def scrape(root="http://8bitdash.com/", interval=5):
+def scrape(root="http://8bitdash.com/", interval=5, out="gifs/"):
     """
     This is the main scraping function. To keep code as minimial as
     possible, the pathnames cannot be dynamically determined (as it
@@ -15,6 +15,7 @@ def scrape(root="http://8bitdash.com/", interval=5):
     No other modifications are necessary.
     url - webpage to scrape from
     interval - wait time (in seconds) inbetween requests
+    out - directory to write to
     """
 
     # global imports
@@ -91,7 +92,7 @@ def scrape(root="http://8bitdash.com/", interval=5):
 
             # be nice, only scrape what's new
             try:
-                open(gif, "rb")
+                open(out + gif, "rb")
                 found += 1
                 print("[  ]", gif, "exists! Skipping...")
             except IOError as e:
@@ -104,7 +105,7 @@ def scrape(root="http://8bitdash.com/", interval=5):
                         print("[>>>] Scraping", gif, "...")
                         r = urllib.request.urlopen(root + author + "/" + gif)
                         c = r.read()
-                        with open(gif, "wb") as fp:
+                        with open(out + gif, "wb") as fp:
                             size = fp.write(c)
                         scraped += 1
                         print(
