@@ -98,18 +98,21 @@ def scrape(root="http://8bitdash.com/", interval=5):
 
                 # request happens here
                 try:
-                    print("[>>>] Scraping", gif, "...")
-                    r = urllib.request.urlopen(root + author + "/" + gif)
-                    c = r.read()
-                    with open(gif, "wb") as fp:
-                        size = fp.write(c)
-                    scraped += 1
-                    print(
-                        "[<<<]",
-                        gif,
-                        "successful! Wrote ",
-                        str(size / 1024 ** 2)[:4] + "MB",
-                    )
+
+                    # apparently not everything is a gif
+                    if 'gif' in gif: 
+                        print("[>>>] Scraping", gif, "...")
+                        r = urllib.request.urlopen(root + author + "/" + gif)
+                        c = r.read()
+                        with open(gif, "wb") as fp:
+                            size = fp.write(c)
+                        scraped += 1
+                        print(
+                            "[<<<]",
+                            gif,
+                            "successful! Wrote ",
+                            str(size / 1024 ** 2)[:4] + "MB",
+                        )
                 except:
                     print("[//<]", gif, "unsuccessful.")
                 attempts += 1
