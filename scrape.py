@@ -133,5 +133,4 @@ def scrape(root="http://8bitdash.com/", interval=5, out="gifs/"):
 
 
 if __name__ == "__main__":
-    scrape()
-    raise SystemExit(0)
+    raise SystemExit(scrape)
