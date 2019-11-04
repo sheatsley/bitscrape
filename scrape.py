@@ -101,10 +101,10 @@ def scrape(root="http://8bitdash.com/", interval=5, out="gifs/"):
                 if "gif" in gif:
                     try:
                         print("[>>>] Scraping", gif, "...")
-                        r = urllib.request.urlopen(root + author + "/" + gif)
-                        c = r.read()
-                        with open(out + gif, "wb") as fp:
-                            size = fp.write(c)
+                        with urllib.request.urlopen(
+                            root + author + "/" + gif
+                        ) as req, open(out + gif, "wb") as fp:
+                            size = fp.write(req.read())
                         scraped += 1
                         print(
                             "[<<<]",
@@ -133,4 +133,4 @@ def scrape(root="http://8bitdash.com/", interval=5, out="gifs/"):
 
 
 if __name__ == "__main__":
-    raise SystemExit(scrape)
+    raise SystemExit(scrape())
