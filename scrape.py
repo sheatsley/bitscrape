@@ -97,11 +97,9 @@ def scrape(root="http://8bitdash.com/", interval=5, out="gifs/"):
                 print("[  ]", gif, "exists! Skipping...")
             except IOError as e:
 
-                # request happens here
-                try:
-
-                    # apparently not everything is a gif
-                    if 'gif' in gif: 
+                # apparently not everything is a gif
+                if "gif" in gif:
+                    try:
                         print("[>>>] Scraping", gif, "...")
                         r = urllib.request.urlopen(root + author + "/" + gif)
                         c = r.read()
@@ -114,10 +112,10 @@ def scrape(root="http://8bitdash.com/", interval=5, out="gifs/"):
                             "successful! Wrote ",
                             str(size / 1024 ** 2)[:4] + "MB",
                         )
-                except:
-                    print("[//<]", gif, "unsuccessful.")
-                attempts += 1
-                time.sleep(5)
+                    except:
+                        print("[//<]", gif, "unsuccessful.")
+                    attempts += 1
+                    time.sleep(5)
 
     # everyone likes closure
     print(
