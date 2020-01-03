@@ -11,8 +11,9 @@ The collection features public works from
 [Valenberg](https://www.deviantart.com/valenberg), and [Mark
 Ferrari](http://www.markferrari.com). Also, there are handful pieces of art I
 have encountered through random internet travels from
-[supervisual](https://www.reddit.com/user/supervisual/) and
-[1ENi1](https://www.reddit.com/user/1Eni1/).
+[supervisual](https://www.reddit.com/user/supervisual/),
+[1ENi1](https://www.reddit.com/user/1Eni1/), and
+[JimmyJ4zz](https://www.reddit.com/user/JimmyJ4zz/).
 
 ## How to use this repo
 Requirements:
@@ -26,5 +27,5 @@ the lastest pieces of art.
 
 ###### Licensing
 
-- Scripts are distributed under the [BSD 3-Clause](LICENSE.md)
+- Scripts are distributed under the [BSD 3-Clause](LICENSE.md).
 - All assests in `gifs/` are distributed under their respective licenses. 
