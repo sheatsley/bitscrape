@@ -12,8 +12,9 @@ The collection features public works from
 Ferrari](http://www.markferrari.com). Also, there are handful pieces of art I
 have encountered through random internet travels from
 [supervisual](https://www.reddit.com/user/supervisual/),
-[1ENi1](https://www.reddit.com/user/1Eni1/), and
-[JimmyJ4zz](https://www.reddit.com/user/JimmyJ4zz/).
+[1ENi1](https://www.reddit.com/user/1Eni1/),
+[JimmyJ4zz](https://www.reddit.com/user/JimmyJ4zz/), and
+[aleha_84](https://www.reddit.com/user/aleha_84/).
 
 ## How to use this repo
 Requirements:
