@@ -2,7 +2,7 @@
 
 This is *Bitscrape* - a repo containing a collection of cool pixel art that I
 use for wallpapers. Most of them have been collected from
-[8bitdash](www.8bitdash.com), so thanks to
+[8bitdash](http://www.8bitdash.com), so thanks to
 [Jendrick](https://www.madewithtea.com) for putting such an awesome collection
 together. 
 
