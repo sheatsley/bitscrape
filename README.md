@@ -13,9 +13,11 @@ Ferrari](http://www.markferrari.com). Also, there are handful pieces of art I
 have encountered through random internet travels from
 [supervisual](https://www.reddit.com/user/supervisual/),
 [1ENi1](https://www.reddit.com/user/1Eni1/),
-[JimmyJ4zz](https://www.reddit.com/user/JimmyJ4zz/), 
-[aleha_84](https://www.reddit.com/user/aleha_84/), and
-[fvdcmmuttr](https://www.reddit.com/user/fvdcmmuttr/).
+[allysonmaciel](https://www.instagram.com/allysonmaciel/),
+[aleha_84](https://www.reddit.com/user/aleha_84/),
+[fvdcmmuttr](https://www.reddit.com/user/fvdcmmuttr/), 
+[kryssalin](https://www.instagram.com/kryssalian/), and
+[brullov](https://www.reddit.com/user/brullov/).
 
 ## How to use this repo
 Requirements:
